@@ -1,4 +1,4 @@
-// const eleContent = document.querySelectorAll('.content');
+const eleContent = document.querySelectorAll('.content');
 const eleImg = document.querySelector('.img-container');
 const eleName = document.querySelector('.name');
 const eleJob = document.querySelector('.job');
@@ -42,7 +42,7 @@ const arrTeam =[ {
 
 
 
-for (let i = 0; i < arrTeam2.length; i++) {
+for (let i = 0; i < eleContent.length; i++) {
     eleImg.innerHTML += `<img src="img/${arrTeam[i].img}" alt="">`;
     eleName.innerHTML += `<h3>${arrTeam[i].name}</h3>`;
     eleJob.innerHTML += `<span>${arrTeam[i].job}</span>`;
