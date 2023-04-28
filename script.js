@@ -1,3 +1,9 @@
+// const eleContent = document.querySelectorAll('.content');
+const eleImg = document.querySelector('.img-container');
+const eleName = document.querySelector('.name');
+const eleJob = document.querySelector('.job');
+
+
 const arrTeam =[ {
     name : 'Wayne Barnett',
     job : 'Founder & CEO',
@@ -36,6 +42,8 @@ const arrTeam =[ {
 
 
 
-for (let i = 0; i < arrTeam.length; i++) {
-    console.log(arrTeam[i])
+for (let i = 0; i < arrTeam2.length; i++) {
+    eleImg.innerHTML += `<img src="img/${arrTeam[i].img}" alt="">`;
+    eleName.innerHTML += `<h3>${arrTeam[i].name}</h3>`;
+    eleJob.innerHTML += `<span>${arrTeam[i].job}</span>`;
 }
