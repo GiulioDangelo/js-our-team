@@ -41,9 +41,9 @@ for (let i = 0; i < arrTeam.length; i++) {
     eleContent.innerHTML += 
     `<div class="col-4 content p-2">
         <div class = "card">
-            <div class="img-container"><img src="img/${arrTeam[i].img}" class="w-100"></div>
-            <div class="name"><h3>${arrTeam[i].name}</h3></div>
-            <div class="job"><span>${arrTeam[i].job}</span></div>
+            <div class="img-container"><img src="img/${arrTeam[i].img}" class="w-100 p-2"></div>
+            <div class="name m-1"><h3>${arrTeam[i].name}</h3></div>
+            <div class="job fw-semibold fs-5"><span>${arrTeam[i].job}</span></div>
         </div>
     </div>`
 }
