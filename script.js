@@ -37,13 +37,13 @@ const arrTeam =[ {
 
 
 
-for (let i = 0; i < arrTeam.length; i++) {
+for (let key of arrTeam) {
     eleContent.innerHTML += 
     `<div class="col-4 content p-2">
         <div class = "card">
-            <div class="img-container"><img src="img/${arrTeam[i].img}" class="w-100 p-2"></div>
-            <div class="name m-1"><h3>${arrTeam[i].name}</h3></div>
-            <div class="job fw-semibold fs-5"><span>${arrTeam[i].job}</span></div>
+            <div class="img-container"><img src="img/${key.img}" class="w-100 p-2"></div>
+            <div class="name m-1"><h3>${key.name}</h3></div>
+            <div class="job fw-semibold fs-5"><span>${key.job}</span></div>
         </div>
     </div>`
 }
